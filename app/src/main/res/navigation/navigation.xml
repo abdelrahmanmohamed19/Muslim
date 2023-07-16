@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.muslim.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.muslim.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_tasbihFragment"
+            app:destination="@id/tasbihFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hadithFragment"
+            app:destination="@id/hadithFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_azkarFragment"
+            app:destination="@id/azkarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_qiblaFragment"
+            app:destination="@id/qiblaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasbihFragment"
+        android:name="com.example.muslim.ui.TasbihFragment"
+        android:label="TasbihFragment"
+        tools:layout="@layout/fragment_tasbih"/>
+    <fragment
+        android:id="@+id/hadithFragment"
+        android:name="com.example.muslim.ui.HadithFragment"
+        android:label="HadithFragment"
+        tools:layout="@layout/fragment_hadith"/>
+    <fragment
+        android:id="@+id/azkarFragment"
+        android:name="com.example.muslim.ui.AzkarFragment"
+        android:label="fragment_azkar"
+        tools:layout="@layout/fragment_azkar" />
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.muslim.ui.QuranFragment"
+        android:label="QuranFragment"
+        tools:layout="@layout/fragment_quran">
+        <action
+            android:id="@+id/action_quranFragment_to_quranTextFragment"
+            app:destination="@id/quranTextFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranTextFragment"
+        android:name="com.example.muslim.ui.QuranTextFragment"
+        android:label="QuranTextFragment" />
+    <fragment
+        android:id="@+id/qiblaFragment"
+        android:name="com.example.muslim.ui.QiblaFragment"
+        android:label="QiblaFragment" />
+</navigation>
