@@ -11,6 +11,8 @@ Muslim app offering precise prayer times, supplications, Quran with interpretati
 
 📖 **Quran with Interpretations**: Access the Quran with comprehensive interpretations and translations.
 
+📜 **Supplications (Duas)**: Explore a collection of supplications for various occasions and moments.
+
 🙏 **Digital Tasbeeh**: Use a digital Tasbeeh to keep track of your supplications and dhikr.
 
 🌍 **Qibla Direction**: Easily find the Qibla direction to ensure accurate prayer alignment.
