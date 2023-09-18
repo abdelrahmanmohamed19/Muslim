@@ -20,9 +20,27 @@
             android:textSize="@dimen/_25ssp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingVertical="@dimen/_8sdp"
             android:paddingLeft="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/mainColor"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyler"

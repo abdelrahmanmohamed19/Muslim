@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.TasbihFragment"
+        tools:context=".presentation.tasbih.TasbihFragment"
         android:background="@color/background">
         <TextView
             android:id="@+id/title"
@@ -22,6 +22,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:paddingLeft="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic" />
 

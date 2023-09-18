@@ -6,13 +6,13 @@
     <data>
           <variable
               name="viewModel"
-              type="com.example.muslim.viewModel.HomeViewModel" />
+              type="com.example.muslim.presentation.home.HomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.HomeFragment"
+        tools:context=".presentation.home.HomeFragment"
         android:background="@color/background">
 
         <TextView
@@ -24,6 +24,7 @@
             android:textSize="@dimen/_25ssp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
+            android:paddingVertical="@dimen/_8sdp"
             android:paddingLeft="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic" />
@@ -40,6 +41,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/home">
 
+
+
                 <TextView
                     android:id="@+id/Date"
                     android:layout_width="wrap_content"
@@ -52,6 +55,17 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/monthname"
                     tools:text="18-12-1444" />
+
+                <ProgressBar
+                    android:id="@+id/loadingProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/monthname"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/gold"/>
 
                 <TextView
                     android:id="@+id/monthname"
@@ -129,6 +143,7 @@
                         android:fontFamily="@font/nunito_bold_italic"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12ssp"
+                        android:layout_marginRight="@dimen/_8sdp"
                         tools:text="    Isha\n04:15 pm" />
                 </LinearLayout>
                 </HorizontalScrollView>
@@ -255,15 +270,36 @@
             android:textSize="@dimen/_16ssp"
             android:textColor="@color/mainColor"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view"
+            android:background="@drawable/custombutton1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintTop_toBottomOf="@id/cardViewAzkar"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/qibla"
+            android:background="@drawable/custombutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Determine your Qibla Direction"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunito_bold_italic"
+            app:layout_constraintTop_toTopOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintLeft_toLeftOf="@id/view"
+            app:layout_constraintRight_toRightOf="@id/view"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/snackbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Determine your Qibla Direction"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginHorizontal="@dimen/_22sdp"
-            android:layout_marginBottom="@dimen/_8sdp"/>
-
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -23,23 +24,17 @@
             android:layout_marginLeft="@dimen/_8sdp"
             android:layout_marginRight="@dimen/_8sdp"
             app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_16sdp"/>
+            android:elevation="@dimen/_16sdp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewQuran"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_70sdp"
-            app:layout_constraintLeft_toLeftOf="@id/view"
-            app:layout_constraintRight_toRightOf="@id/view"
-            app:layout_constraintTop_toTopOf="@id/view"
-            app:layout_constraintBottom_toBottomOf="@id/view"
-            android:layout_marginLeft="@dimen/_12sdp"
-            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_margin="@dimen/_4sdp"
             app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_16sdp"
-            >
+            android:elevation="@dimen/_16sdp">
 
-            <androidx.appcompat.widget.AppCompatButton
+            <TextView
                 android:id="@+id/QuranButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,8 +44,12 @@
                 android:fontFamily="@font/nunito_bold_italic"
                 android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_16ssp" />
+                android:textSize="@dimen/_16ssp">
+            </TextView>
+
         </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

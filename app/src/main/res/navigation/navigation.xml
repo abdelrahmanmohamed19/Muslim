@@ -7,64 +7,104 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.muslim.ui.SplashFragment"
+        android:name="com.example.muslim.presentation.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.muslim.ui.HomeFragment"
+        android:name="com.example.muslim.presentation.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_tasbihFragment"
-            app:destination="@id/tasbihFragment" />
+            app:destination="@id/tasbihFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
         <action
             android:id="@+id/action_homeFragment_to_hadithFragment"
-            app:destination="@id/hadithFragment" />
+            app:destination="@id/hadithFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
         <action
             android:id="@+id/action_homeFragment_to_azkarFragment"
-            app:destination="@id/azkarFragment" />
+            app:destination="@id/azkarFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
         <action
             android:id="@+id/action_homeFragment_to_quranFragment"
-            app:destination="@id/quranFragment" />
+            app:destination="@id/QuranFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
         <action
             android:id="@+id/action_homeFragment_to_qiblaFragment"
-            app:destination="@id/qiblaFragment" />
+            app:destination="@id/qiblaFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
     </fragment>
     <fragment
         android:id="@+id/tasbihFragment"
-        android:name="com.example.muslim.ui.TasbihFragment"
+        android:name="com.example.muslim.presentation.tasbih.TasbihFragment"
         android:label="TasbihFragment"
         tools:layout="@layout/fragment_tasbih"/>
     <fragment
         android:id="@+id/hadithFragment"
-        android:name="com.example.muslim.ui.HadithFragment"
+        android:name="com.example.muslim.presentation.hadith.HadithFragment"
         android:label="HadithFragment"
         tools:layout="@layout/fragment_hadith"/>
     <fragment
         android:id="@+id/azkarFragment"
-        android:name="com.example.muslim.ui.AzkarFragment"
+        android:name="com.example.muslim.presentation.azkar.AzkarFragment"
         android:label="fragment_azkar"
         tools:layout="@layout/fragment_azkar" />
+
     <fragment
-        android:id="@+id/quranFragment"
-        android:name="com.example.muslim.ui.QuranFragment"
+        android:id="@+id/QuranFragment"
+        android:name="com.example.muslim.presentation.quran.QuranFragment"
         android:label="QuranFragment"
         tools:layout="@layout/fragment_quran">
         <action
             android:id="@+id/action_quranFragment_to_quranTextFragment"
-            app:destination="@id/quranTextFragment" />
+            app:destination="@id/QuranTextFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
     </fragment>
+
     <fragment
-        android:id="@+id/quranTextFragment"
-        android:name="com.example.muslim.ui.QuranTextFragment"
-        android:label="QuranTextFragment" />
+        android:id="@+id/QuranTextFragment"
+        android:name="com.example.muslim.presentation.quran.QuranTextFragment"
+        android:label="QuranTextFragment"
+        tools:layout="@layout/fragment_quran_text">
+<!--        <argument-->
+<!--            android:name="name"-->
+<!--            app:argType="Int"/>-->
+        <argument
+            android:name="name"
+            app:argType="integer" />
+    </fragment>
+
     <fragment
         android:id="@+id/qiblaFragment"
-        android:name="com.example.muslim.ui.QiblaFragment"
-        android:label="QiblaFragment" />
+        android:name="com.example.muslim.presentation.qibla.QiblaFragment"
+        android:label="QiblaFragment"
+        tools:layout="@layout/fragment_qibla"/>
 </navigation>

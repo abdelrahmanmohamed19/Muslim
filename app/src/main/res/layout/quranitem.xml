@@ -77,7 +77,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@id/AyaText"
-                        android:padding="@dimen/_4sdp"
+                        android:paddingRight="@dimen/_8sdp"
                         android:layout_marginTop="@dimen/_4sdp"
                         android:textSize="@dimen/_16sdp"
                         android:textColor="@color/white"
@@ -105,7 +105,8 @@
                         app:layout_constraintTop_toBottomOf="@id/TafserLabel"
                         app:layout_constraintRight_toRightOf="parent"
                         android:fontFamily="@font/nunito_bold_italic"
-                        android:padding="@dimen/_4sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
                         android:text="أبتدئ قراءة القرآن باسم الله مستعينا به، (اللهِ) علم على الرب -تبارك وتعالى- المعبود بحق دون سواه، وهو أخص أسماء الله تعالى، ولا يسمى به غيره سبحانه. (الرَّحْمَنِ) ذي الرحمة العامة الذي وسعت رحمته جميع الخلق، (الرَّحِيمِ) بالمؤمنين، وهما اسمان من أسمائه تعالى، يتضمنان إثبات صفة الرحمة لله تعالى كما يليق بجلاله."
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16ssp" />
