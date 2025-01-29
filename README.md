@@ -8,22 +8,35 @@ an Android application designed to support Muslims in their daily spiritual jour
 ## $\color{#e8d71e}{💡 Features}$
 
 🕋 Accurate Prayer Times : Get precise prayer times.
+<br>
 📖 Quran with Interpretations : Access the Quran with comprehensive interpretations.
+<br>
 📿 Morning & Evening Azkar: Recite daily supplications to start and end your day with blessings.
+<br>
 📜 Supplications (Duas) : Explore a collection of supplications for various occasions and moments.
+<br>
 🙏 Digital Tasbeeh : Use a digital Tasbeeh to keep track of your dhikr.
+<br>
 🙏 names of Allah: Explore and reflect on the 99 names of Allah.
 
 
 ## $\color{#16acea}{💻 Technologies}$
 📚 Kotlin
+<br>
 📚 Clean Architecture
+<br>
 📚 MVVM
+<br>
 📚 Dagger-Hilt
+<br>
 📚 Jetpack Compose
+<br>
 📚 Coroutines
+<br>
 📚 Retrofit
+<br>
 📚 Room Database
+<br>
 📚 Flows
 
 
