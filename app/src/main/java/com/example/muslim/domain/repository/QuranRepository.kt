@@ -1,10 +1,9 @@
 package com.example.muslim.domain.repository
 
-import com.example.muslim.data.remote.dto.SuraList
-import kotlinx.coroutines.flow.Flow
+import android.content.Context
+import org.json.JSONArray
 
 interface QuranRepository {
 
-    suspend fun getQuran(id : Int) : Flow<List<SuraList>>
-
+    suspend fun getQuran(context: Context): JSONArray
 }

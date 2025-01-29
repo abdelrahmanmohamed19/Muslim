@@ -17,11 +17,8 @@
             android:layout_height="wrap_content"
             android:background="@color/mainColor"
             android:text="Quran"
-            android:textSize="@dimen/_25ssp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:paddingVertical="@dimen/_8sdp"
-            android:paddingLeft="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic" />
 
@@ -48,7 +45,6 @@
             android:layout_height="0dp"
             app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
             tools:listitem="@layout/quranitem"
-            app:layout_constraintTop_toBottomOf="@id/title"
-            android:paddingBottom="@dimen/_50sdp" />
+            app:layout_constraintTop_toBottomOf="@id/title" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

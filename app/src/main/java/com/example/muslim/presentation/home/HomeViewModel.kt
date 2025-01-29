@@ -1,26 +1,43 @@
 package com.example.muslim.presentation.home
 
-import android.content.Context
-import android.view.View
+import android.os.Build
+import android.util.Log
+import androidx.annotation.RequiresApi
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.muslim.data.remote.dto.Times
-import com.example.muslim.domain.usecase.home.GetPrayerTimesUseCase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
+import com.example.muslim.data.common.ApiResult
+import com.example.muslim.domain.usecase.GetDateTimeUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class HomeViewModel : ViewModel() {
+@HiltViewModel
+class HomeViewModel @Inject constructor(private val getDateTimeUseCase: GetDateTimeUseCase): ViewModel() {
 
-    private val useCase = GetPrayerTimesUseCase()
-    private var _prayerTimes = MutableStateFlow(Times("","","","","","",""))
-    val prayerTimes = _prayerTimes.asStateFlow()
+    var homeUIState by mutableStateOf<HomeUIState?>(null)
+        private set
 
-    fun getPrayerTimes (view:View , context : Context){
-        viewModelScope.launch(Dispatchers.IO) {
-            useCase.getPrayerTimes({ getPrayerTimes(view,context) },view,context).collect{
-                _prayerTimes.value = it
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun getDatesTimes () {
+        viewModelScope.launch{
+            getDateTimeUseCase.getDatesTimes().collect{ response ->
+                homeUIState = when(response) {
+                    is ApiResult.Success -> {
+                        Log.d("DSdsadsdsa", response.data.toString())
+                        HomeUIState(data = response.data)
+                    }
+                    is ApiResult.Error -> {
+                        Log.d("DSdsadsdsa", response.errorMessage.toString())
+                        HomeUIState(errorMessage = response.errorMessage)
+                    }
+                    is ApiResult.Loading -> {
+                        Log.d("DSdsadsdsa", "Loading....")
+                        HomeUIState(isLoading = true)
+                    }
+                }
             }
         }
     }

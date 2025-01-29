@@ -1,10 +1,12 @@
 package com.example.muslim.domain.repository
 
 import android.content.Context
-import com.example.muslim.data.remote.dto.AzkarList
-import kotlinx.coroutines.flow.StateFlow
+import org.json.JSONArray
+
 
 interface AzkarRepository {
 
-    suspend fun getAzkar(context : Context) : StateFlow<List<AzkarList>>
+    suspend fun getMorningAzkar(context: Context): JSONArray
+
+    suspend fun getEveningAzkar(context: Context): JSONArray
 }

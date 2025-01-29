@@ -6,56 +6,9 @@
 
     <data>
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/gold"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
-            android:layout_marginLeft="@dimen/_8sdp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
-
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/mainColor"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_4sdp"
-            android:layout_marginBottom="@dimen/_4sdp"
-            android:layout_marginRight="@dimen/_4sdp"
-            android:layout_marginLeft="@dimen/_4sdp"
-            app:layout_constraintTop_toTopOf="@id/view"
-            app:layout_constraintBottom_toBottomOf="@id/view"
-            app:layout_constraintLeft_toLeftOf="@id/view"
-            app:layout_constraintRight_toRightOf="@id/view">
-
-
-
-            <TextView
-                android:id="@+id/hadithText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/_4sdp"
-                android:padding="@dimen/_4sdp"
-                android:textSize="@dimen/_16sdp"
-                android:fontFamily="@font/nunito_bold_italic"
-                android:textColor="@color/white"
-                tools:text="حَدَّثَنَا مُسَدَّدُ بْنُ مُسَرْهَدٍ حَدَّثَنَا حَمَّادُ بْنُ زَيْدٍ وَعَبْدُ الْوَارِثِ عَنْ عَبْدِ الْعَزِيزِ بْنِ صُهَيْبٍ عَنْ أَنَسِ بْنِ مَالِكٍ قَالَكَانَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ إِذَا دَخَلَ الْخَلَاءَ قَالَ عَنْ حَمَّادٍ قَالَ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ وَقَالَ عَنْ عَبْدِ الْوَارِثِ قَالَ أَعُوذُ بِاللَّهِ مِنْ الْخُبُثِ وَالْخَبَائِثِقَالَ أَبُو دَاوُد رَوَاهُ شُعْبَةُ عَنْ عَبْدِ الْعَزِيزِ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ وَقَالَ مَرَّةً أَعُوذُ بِاللَّهِ و قَالَ وُهَيْبٌ فَلْيَتَعَوَّذْ بِاللَّهِ حَدَّثَنَا الْحَسَنُ بْنُ عَمْرٍو يَعْنِي السَّدُوسِيَّ حَدَّثَنَا وَكِيعٌ عَنْ شُعْبَةَ عَنْ عَبْدِ الْعَزِيزِ هُوَ ابْنُ صُهَيْبٍ عَنْ أَنَسٍ بِهَذَا الْحَدِيثِ قَالَ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ وَقَالَ شُعْبَةُ وَقَالَ مَرَّةً أَعُوذُ njkjkjnkjnjknkjnkjnkjvfvsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsfdsnkjnبِاللَّه" />
-        </androidx.cardview.widget.CardView>
-        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

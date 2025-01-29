@@ -1,10 +1,10 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
     <style name="Theme.Muslim" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/mainColor</item>
         <item name="colorPrimaryVariant">@color/mainColor</item>
         <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="android:statusBarColor">@color/mainColor</item>
         <item name="titleTextColor">@color/white</item>
-        <item name="titleTextStyle">@font/nunito_bold_italic</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 </resources>

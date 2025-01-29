@@ -7,49 +7,11 @@
     <data>
 
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_8sdp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_80sdp"
-            android:backgroundTint="@color/gold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_16sdp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardViewQuran"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_70sdp"
-            android:layout_margin="@dimen/_4sdp"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_16sdp">
-
-            <TextView
-                android:id="@+id/QuranButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/mainColor"
-                android:drawableTint="@color/white"
-                tools:text="1- Al-Fatiha\nالفاتحة"
-                android:fontFamily="@font/nunito_bold_italic"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_16ssp">
-            </TextView>
-
-        </androidx.cardview.widget.CardView>
-        </androidx.cardview.widget.CardView>
-
+        android:layout_height="match_parent">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>

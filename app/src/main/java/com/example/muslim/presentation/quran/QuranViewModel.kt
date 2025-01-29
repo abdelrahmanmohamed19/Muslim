@@ -1,28 +1,32 @@
 package com.example.muslim.presentation.quran
 
 import android.content.Context
-import android.view.View
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.muslim.data.remote.dto.SuraList
-import com.example.muslim.domain.usecase.quran.GetQuranUseCase
-import com.google.android.material.snackbar.Snackbar
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
+import com.example.muslim.data.common.ApiResult
+import com.example.muslim.domain.usecase.GetQuranUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class QuranViewModel : ViewModel() {
+@HiltViewModel
+class QuranViewModel @Inject constructor(private val getQuranUseCase: GetQuranUseCase) : ViewModel() {
 
-    private val useCase = GetQuranUseCase()
-    private var _quranList = MutableStateFlow(emptyList<SuraList>())
-    val quranList = _quranList.asStateFlow()
+    var quranUIState by mutableStateOf<QuranUIState?>(null)
+        private set
 
-    fun getQuran(id : Int,context: Context , view : View) {
-      viewModelScope.launch(Dispatchers.IO) {
-          useCase.getQuran(id,context,{ getQuran(id, context,view) },view ).collect{
-             _quranList.value = it
-          }
-      }
+    fun getQuran(suraNumber: Int, context: Context, withExplanation: Boolean) {
+        viewModelScope.launch{
+            getQuranUseCase.getQuran(suraNumber, context, withExplanation).collect{ response ->
+                quranUIState = when(response) {
+                    is ApiResult.Success -> QuranUIState(data = response.data)
+                    is ApiResult.Error -> QuranUIState(errorMessage = response.errorMessage)
+                    is ApiResult.Loading -> QuranUIState(isLoading = true)
+                }
+            }
+        }
     }
 }

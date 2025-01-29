@@ -1,29 +1,19 @@
 package com.example.muslim.data.repository
 
 import android.content.Context
-import com.example.muslim.data.remote.Api
-import com.example.muslim.data.remote.ApiServices
-import com.example.muslim.data.SessionManager
-import com.example.muslim.data.remote.dto.AzkarList
+import com.example.muslim.R
 import com.example.muslim.domain.repository.AzkarRepository
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
+import com.example.muslim.presentation.common.Utils
+import org.json.JSONArray
+import javax.inject.Inject
 
-class AzkarRepositoryImpl : AzkarRepository {
+class AzkarRepositoryImpl @Inject constructor(): AzkarRepository {
 
-    private val api : ApiServices = Api("https://www.hisnmuslim.com/").retrofit
+    override suspend fun getMorningAzkar(context: Context): JSONArray {
+        return Utils.readJsonObject(context, R.raw.morning_azkar) !!
+    }
 
-    override suspend fun getAzkar(context : Context) : StateFlow<List<AzkarList>> {
-
-        val response = api.getAzkar()
-        val azkarList = MutableStateFlow(emptyList<AzkarList>())
-
-        if (response.isSuccessful) {
-            val responseBody = response.body()
-            val responseBodyData = responseBody?.Azkar
-            azkarList.value = responseBodyData !!
-            SessionManager(context).cacheAzkar(azkarList.value)
-        }
-        return azkarList
+    override suspend fun getEveningAzkar(context: Context): JSONArray {
+        return Utils.readJsonObject(context, R.raw.evening_azkar) !!
     }
 }

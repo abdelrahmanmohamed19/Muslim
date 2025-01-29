@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/amiri_quran</item>
+        <item>@font/arapey</item>
+        <item>@font/benne</item>
+        <item>@font/cairo</item>
+        <item>@font/cairo_extralight</item>
+        <item>@font/noto_naskh_arabic_medium</item>
         <item>@font/nunito_bold_italic</item>
         <item>@font/nunito_sans_bold_italic</item>
+        <item>@font/space_grotesk_medium</item>
     </array>
 </resources>

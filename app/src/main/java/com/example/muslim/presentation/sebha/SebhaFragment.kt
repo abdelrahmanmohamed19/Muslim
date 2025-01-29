@@ -1,4 +1,4 @@
-package com.example.muslim.presentation.quran
+package com.example.muslim.presentation.sebha
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,9 +9,8 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.example.muslim.R
-import com.example.muslim.data.common.Constants
 
-class QuranFragment: Fragment() {
+class SebhaFragment : Fragment() {
 
     private lateinit var navController: NavController
     private lateinit var composeView: ComposeView
@@ -26,15 +25,8 @@ class QuranFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         composeView.setContent {
-            QuranScreen(
-                type = Constants.type,
-                navigateToHomeScreen =  { navController.navigate(R.id.action_quranFragment_to_homeFragment) },
-                navigateToQuranScreen = {
-                    if(Constants.type == 0) { navController.navigate(R.id.action_quranFragment_to_quranTextFragment)
-                    }},
-                navigateToExplanationScreen = {
-                    navController.navigate(R.id.action_quranFragment_to_quranExplanationFragment)
-                }
+            SebhaScreen(
+                navigateToHomeScreen = { navController.navigate(R.id.action_sebhaFragment_to_homeFragment)}
             )
         }
     }

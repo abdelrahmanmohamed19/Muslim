@@ -16,11 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/gold"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:elevation="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
-            android:layout_marginLeft="@dimen/_8sdp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -30,12 +25,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/mainColor"
-                app:cardCornerRadius="@dimen/_20sdp"
-                android:elevation="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_4sdp"
-                android:layout_marginBottom="@dimen/_4sdp"
-                android:layout_marginRight="@dimen/_4sdp"
-                android:layout_marginLeft="@dimen/_4sdp"
                 app:layout_constraintTop_toTopOf="@id/view"
                 app:layout_constraintBottom_toBottomOf="@id/view"
                 app:layout_constraintLeft_toLeftOf="@id/view"
@@ -55,8 +44,7 @@
                         android:fontFamily="@font/nunito_bold_italic"
                         android:text="آية "
                         android:textStyle="bold"
-                        android:textColor="@color/gold"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textColor="@color/gold" />
 
                     <TextView
                         android:id="@+id/AyaNumber"
@@ -68,8 +56,7 @@
                         android:gravity="center"
                         android:text="1"
                         android:textStyle="bold"
-                        android:textColor="@color/gold"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textColor="@color/gold"/>
 
 
                     <TextView
@@ -77,9 +64,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:layout_constraintTop_toBottomOf="@id/AyaText"
-                        android:paddingRight="@dimen/_8sdp"
-                        android:layout_marginTop="@dimen/_4sdp"
-                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/white"
                         tools:text= "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ"
                         android:fontFamily="@font/nunito_bold_italic"/>
@@ -88,9 +72,7 @@
                         android:id="@+id/TafserLabel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/gold"
-                        android:layout_marginVertical="@dimen/_4sdp"
                         android:fontFamily="@font/nunito_bold_italic"
                         android:text="التفسير "
                         android:textStyle="bold"
@@ -105,11 +87,8 @@
                         app:layout_constraintTop_toBottomOf="@id/TafserLabel"
                         app:layout_constraintRight_toRightOf="parent"
                         android:fontFamily="@font/nunito_bold_italic"
-                        android:paddingRight="@dimen/_8sdp"
-                        android:paddingBottom="@dimen/_8sdp"
                         android:text="أبتدئ قراءة القرآن باسم الله مستعينا به، (اللهِ) علم على الرب -تبارك وتعالى- المعبود بحق دون سواه، وهو أخص أسماء الله تعالى، ولا يسمى به غيره سبحانه. (الرَّحْمَنِ) ذي الرحمة العامة الذي وسعت رحمته جميع الخلق، (الرَّحِيمِ) بالمؤمنين، وهما اسمان من أسمائه تعالى، يتضمنان إثبات صفة الرحمة لله تعالى كما يليق بجلاله."
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textColor="@color/white"/>
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

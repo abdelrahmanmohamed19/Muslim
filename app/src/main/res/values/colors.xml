@@ -2,7 +2,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="mainColor">#086C46</color>
-    <color name="gold">#F5C770</color>
+    <color name="mainColor">#1b6144</color>
+    <color name="gold">#F5C770 </color>
     <color name="background">#27AAA9A9</color>
+    <color name="morningCardColor">#87CEEB</color>
+    <color name="eveningCardColor">#060c4a</color>
 </resources>

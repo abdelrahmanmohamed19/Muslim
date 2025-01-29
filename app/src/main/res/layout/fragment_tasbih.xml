@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.tasbih.TasbihFragment"
+        tools:context=".presentation.sebha.SebhaFragment"
         android:background="@color/background">
         <TextView
             android:id="@+id/title"
@@ -18,11 +18,8 @@
             android:layout_height="wrap_content"
             android:background="@color/mainColor"
             android:text="Tasbih"
-            android:textSize="@dimen/_25ssp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:paddingLeft="@dimen/_8sdp"
-            android:paddingVertical="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic" />
 
@@ -33,7 +30,6 @@
             android:fontFamily="@font/nunito_bold_italic"
             android:text="Subhan Allah, Alhamdullah, Allah Akbar"
             android:textColor="@color/mainColor"
-            android:textSize="@dimen/_14ssp"
             app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -41,8 +37,8 @@
 
         <Button
             android:id="@+id/view"
-            android:layout_width="@dimen/_230sdp"
-            android:layout_height="@dimen/_230sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -50,15 +46,14 @@
             android:backgroundTint="@color/gold"/>
         <Button
             android:id="@+id/buttonCount"
-            android:layout_width="@dimen/_210sdp"
-            android:layout_height="@dimen/_210sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:backgroundTint="@color/mainColor"
             android:text="0/33"
-            android:textSize="@dimen/_60ssp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic"/>
 

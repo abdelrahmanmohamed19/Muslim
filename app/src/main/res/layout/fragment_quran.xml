@@ -17,11 +17,8 @@
             android:layout_height="wrap_content"
             android:background="@color/mainColor"
             android:text="Quran"
-            android:textSize="@dimen/_25ssp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:paddingLeft="@dimen/_8sdp"
-            android:paddingVertical="@dimen/_8sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/nunito_bold_italic"/>
 
@@ -30,9 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/title"
-            android:layout_marginTop="@dimen/_4sdp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/quranbutton"
-            android:paddingBottom="@dimen/_50sdp" />
+            tools:listitem="@layout/quranbutton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -6,44 +6,9 @@
     <data>
 
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".presentation.hadith.HadithFragment">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/mainColor"
-            android:text="Azkar"
-            android:textSize="@dimen/_25ssp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:paddingVertical="@dimen/_8sdp"
-            android:paddingLeft="@dimen/_8sdp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/nunito_bold_italic" />
-
-        <ProgressBar
-            android:id="@+id/loadingProgressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:indeterminate="true"
-            android:indeterminateTint="@color/mainColor"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyler"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-            tools:listitem="@layout/hadithitem"
-            app:layout_constraintTop_toBottomOf="@id/title"
-            android:paddingBottom="@dimen/_50sdp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
