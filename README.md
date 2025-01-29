@@ -2,40 +2,28 @@
 
 ## $\color{#d71b3b}{🚀 About}$
 
-Muslim app offering precise prayer times, supplications, Quran with interpretations, digital Tasbeeh, and Qibla direction.
+an Android application designed to support Muslims in their daily spiritual journey.
 
 
 ## $\color{#e8d71e}{💡 Features}$
 
-🕋 **Accurate Prayer Times**: Get precise prayer times for your location, so you never miss a prayer.
-
-📖 **Quran with Interpretations**: Access the Quran with comprehensive interpretations and translations.
-
-📜 **Supplications (Duas)**: Explore a collection of supplications for various occasions and moments.
-
-🙏 **Digital Tasbeeh**: Use a digital Tasbeeh to keep track of your supplications and dhikr.
-
-🌍 **Qibla Direction**: Easily find the Qibla direction to ensure accurate prayer alignment.
-
-✨ **User-Friendly Interface**: Enjoy a simple and intuitive user interface for easy navigation.
-
-📅 **Islamic Calendar**: Stay informed about important Islamic dates and events.
+🕋 Accurate Prayer Times : Get precise prayer times.
+📖 Quran with Interpretations : Access the Quran with comprehensive interpretations.
+📿 Morning & Evening Azkar: Recite daily supplications to start and end your day with blessings.
+📜 Supplications (Duas) : Explore a collection of supplications for various occasions and moments.
+🙏 Digital Tasbeeh : Use a digital Tasbeeh to keep track of your dhikr.
+🙏 names of Allah: Explore and reflect on the 99 names of Allah.
 
 
 ## $\color{#16acea}{💻 Technologies}$
-
 📚 Kotlin
-<br>
+📚 Clean Architecture
 📚 MVVM
-<br>
-📚 Coroutines 
-<br>
-📚 Retrofit 
-<br>
-📚 Rest ApIs
-<br>
-📚 Shared Preferences
-<br>
+📚 Dagger-Hilt
+📚 Jetpack Compose
+📚 Coroutines
+📚 Retrofit
+📚 Room Database
 📚 Flows
 
 
