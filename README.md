@@ -21,24 +21,18 @@ an Android application designed to support Muslims in their daily spiritual jour
 
 
 ## $\color{#16acea}{💻 Technologies}$
-📚 Kotlin
-<br>
-📚 Clean Architecture
-<br>
-📚 MVVM
-<br>
-📚 Dagger-Hilt
-<br>
-📚 Jetpack Compose
-<br>
-📚 Coroutines
-<br>
-📚 Retrofit
-<br>
-📚 Room Database
-<br>
-📚 Flows
 
+📚 <b>Programming Language:</b> $\color{#00A6ED}{Kotlin}$
+<br>
+📚 <b>Architecture:</b> $\color{#00A6ED}{Clean Architecture, MVVM}$ 
+<br>
+📚 <b>UI & Design:</b> $\color{#00A6ED}{Jetpack Compose}$
+<br>
+📚 <b>Dependency Injection:</b> $\color{#00A6ED}{Dagger-Hilt}$   
+📚 <b>Asynchronous & Reactive Programming:</b> $\color{#00A6ED}{Coroutines, Flows}$
+<br>
+📚 <b>Networking:</b> $\color{#00A6ED}{Retrofit, Rest APIs}$    
+📚 <b>Data Storage & Persistence:</b> $\color{#00A6ED}{Room Database}$ 
 
 ## $\color{#4203c9}{📷 Screenshots}$
 
